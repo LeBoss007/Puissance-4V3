@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eee;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.yellow {
+    background-color: yellow;
+}
+
+#message {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: #45a049;
+}
